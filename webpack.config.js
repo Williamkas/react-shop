@@ -37,7 +37,7 @@ module.exports = {
 					"sass-loader",
 				],
 			},
-            // {
+            // { EN TEORIA ESTO ES PARA PODER VER EL ICONO DEL LOGO... PERO NO FUNCIONA
             //     test: /\.(png|jpg|svg|jpeg|webp)$/,
             // /*aquí en test agregas la expresión regular para procesar los diferentes tipos de imagenes que tengas.*/
             //     type: 'asset/resource',
