@@ -10,13 +10,21 @@
      const addToCart = (payload) => {
          setState({
              ...state,
-             cart:[...state.cart, payload]
+             cart:[...state.cart, payload] // DUDA? porqué necesito crear el primer elemento del objeto (...state) si lo estoy creando de nuevo en cart:[...state.cart, ]
          })
+     }
+
+     const removeFromCart = (payload) => {
+        setState({
+            ...state,
+            cart: state.cart.filter(items => items.id !== payload.id) //DUDA? me confunde la sintaxis cart: state.cart.filter(items => ...
+        })
      }
 
      return {
          state,
-         addToCart
+         addToCart,
+         removeFromCart
      }
  }
 
